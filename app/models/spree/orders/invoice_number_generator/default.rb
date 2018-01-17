@@ -7,7 +7,7 @@ module Spree
         end
 
         def generate
-          Spree::PrintInvoice::Config.prefix + Spree::PrintInvoice::Config.increase_invoice_number
+          Spree::PrintInvoice::Config.prefix + Spree::PrintInvoice::Config.increase_invoice_number(@order.store)
         end
       end
     end
