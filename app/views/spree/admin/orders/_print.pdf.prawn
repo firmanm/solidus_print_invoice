@@ -30,7 +30,7 @@ else
 
   move_down 2
   font @font_face,  :size => 9
-  text "#{t('spree.order_number' :number => @order.number)}", :align => :right
+  text "#{Spree.t(:order_number, :number => @order.number)}", :align => :right
 
   move_down 2
   font @font_face, :size => 9
